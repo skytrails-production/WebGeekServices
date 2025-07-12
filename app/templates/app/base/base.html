@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>
+         ::: Global Geek Security ::: 
+      </title>
+      <!-- desktop bookmark -->
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="{% static "assets/img/favicon.png" %}">
+      <meta name="theme-color" content="#ffffff">
+      <!-- icons & favicons -->
+      <link rel="shortcut icon" type="image/x-icon" href="{% static "assets/img/favicon.png" %}">
+      <!-- this icon shows in browser toolbar -->
+      <link rel="icon" type="image/x-icon" href="{% static "assets/img/favicon.png" %}">
+      <link rel="shortcut icon" type="image/x-icon" href="{% static "assets/img/favicon.png" %}">
+      <link rel="icon" type="image/x-icon" href="{% static "assets/img/favicon.png" %}">
+      <!-- GOOGLE FONT -->
+      <link href="css-2?family=Roboto:100,300,400,500,700" rel="stylesheet">
+      <!-- BOOTSTRAP CSS -->
+      <link rel="stylesheet" href="{% static "assets/vendor/bootstrap/css/bootstrap.min.css" %}">
+      <link rel="stylesheet" href="{% static "assets/vendor/navbar/bootstrap-4-navbar.css" %}">
+      <!--Animate css -->
+      <link rel="stylesheet" href="{% static "assets/vendor/animate/animate.css" %}" media="all">
+      <!-- FONT AWESOME CSS -->
+      <link rel="stylesheet" href="{% static "assets/vendor/fontawesome/css/font-awesome.min.css" %}">
+      <!--owl carousel css -->
+      <link rel="stylesheet" href="{% static "assets/vendor/owl-carousel/owl.carousel.css" %}" media="all">
+      <!--Magnific Popup css -->
+      <link rel="stylesheet" href="{% static "assets/vendor/magnific/magnific-popup.css" %}" media="all">
+      <!--Nice Select css -->
+      <link rel="stylesheet" href="{% static "assets/vendor/nice-select/nice-select.css" %}" media="all">
+      <!--Offcanvas css -->
+      <link rel="stylesheet" href="{% static "assets/vendor/js-offcanvas/css/js-offcanvas.css" %}" media="all">
+      <!-- MODERNIZER  -->
+      <script src="{% static "assets/vendor/modernizr/modernizr-custom.js" %}"></script>
+      <!-- Main Master Style  CSS  -->
+      <link data-layout="1" rel="stylesheet" href="{% static "assets/css/style-default.min.css" %}" media="all">
+      
+   </head>
+   <body>
+      <form method="post" id="form1">
+         <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="z0egW6bwbgU+zPOdsjEXr64B7va5nkv7jzMEub6yq8YKxZqhkEDJwXPIK4P+MqqnXies0eQD6xfnAYzOw3F7tTA6mvw=">
+         <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+         <!--== Header Area Start ==-->
+         {% include "app/base/header.html" %}
+         <!--== Header Area End ==-->
+         {% block main-content %}{% endblock main-content %}
+         <!--== Blog Area EndBlog ==-->
+         <!--== Footer Area Start ==-->
+         {% include "app/base/footer.html" %}
+         <!--== Footer Area End ==-->
+         <!--== Scroll Top ==-->
+         <a href="#" class="scroll-top">
+         <i class="fa fa-angle-up"></i>
+         </a>
+         <!--== Scroll Top ==-->
+         <!-- SITE SCRIPT  -->
+         <!-- Jquery JS  -->
+         <script src="{% static "assets/vendor/jquery/jquery-3.3.1.min.js" %}"></script>
+         <!-- POPPER JS -->
+         <script src="{% static "assets/vendor/bootstrap/js/popper.min.js" %}"></script>
+         <!-- BOOTSTRAP JS -->
+         <script src="{% static "assets/vendor/bootstrap/js/bootstrap.min.js" %}"></script>
+         <script src="{% static "assets/vendor/navbar/bootstrap-4-navbar.js" %}"></script>
+         <!--owl-->
+         <script src="{% static "assets/vendor/owl-carousel/owl.carousel.min.js" %}"></script>
+         <!--Waypoint-->
+         <script src="{% static "assets/vendor/waypoint/waypoints.min.js" %}"></script>
+         <!--CounterUp-->
+         <script src="{% static "assets/vendor/counterup/jquery.counterup.min.js" %}"></script>
+         <!--isotope-->
+         <script src="{% static "assets/vendor/isotope/isotope.pkgd.min.js" %}"></script>
+         <!--magnific-->
+         <script src="{% static "assets/vendor/magnific/jquery.magnific-popup.min.js" %}"></script>
+         <!--Smooth Scroll-->
+         <script src="{% static "assets/vendor/smooth-scroll/jquery.smooth-scroll.min.js" %}"></script>
+         <!--Jquery Easing-->
+         <script src="{% static "assets/vendor/jquery-easing/jquery.easing.1.3.min.js" %}"></script>
+         <!--Nice Select -->
+         <script src="{% static "assets/vendor/nice-select/jquery.nice-select.js" %}"></script>
+         <!--Jquery Valadation -->
+         <script src="{% static "assets/vendor/validation/jquery.validate.min.js" %}"></script>
+         <script src="{% static "assets/vendor/validation/additional-methods.min.js" %}"></script>
+         <!--off-canvas js -->
+         <script src="{% static "assets/vendor/js-offcanvas/js/js-offcanvas.pkgd.min.js" %}"></script>
+         <!-- Countdown -->
+         <script src="{% static "assets/vendor/jquery.countdown/jquery.countdown.min.js" %}"></script>
+         <!-- custom js: main custom theme js file  -->
+         <script src="{% static "assets/js/theme.min.js" %}"></script>
+         <!-- custom js: custom js file is added for easy custom js code  -->
+         <script src="{% static "assets/js/custom.js" %}"></script>
+         <!--End of Tawk.to Script-->
+      </form>
+   </body>
+</html>

@@ -1,0 +1,88 @@
+{% extends "app/base/base.html" %}
+{% load static %}
+{% block main-content %}
+
+<!--== Page Title Area Start ==-->
+<section id="page-title-area">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8 m-auto text-center">
+            <div class="page-title-content">
+               <h1 class="h2">CHECK STATUS</h1>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--== Page Title Area End ==-->
+<section id="t">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 text-center" style="padding:10px;">
+            <a href="#"><b>Check Your Invoice & Order</b></a>
+         </div>
+      </div>
+   </div>
+</section>
+<section id="page-content-wrap">
+   <div class="contact-page-wrap section-padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="contact-content-inner">
+                  <div class="row">
+                     <div class="col-lg-5">
+                        <!-- Map Area Start -->
+                        <div class="">
+                           <img src="{% static "assets/img/orderclaim.jpg" %}" class="img-fluid">
+                        </div>
+                        <!-- Map Area End -->
+                     </div>
+                     <div class="col-lg-6 m-autos">
+                        <div class="contact-form-wrap">
+                           <h3 style="line-height: 1.3em;">CHECK CLAIM STATUS</h3>
+                           <div action="#" id="cbx-contact-form">
+                              <div class="row">
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">Order & Claim Number</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtOrdNo" id="ContentPlaceHolder1_txtOrdNo" type="number" required="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxemail">Service No.</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtSerialNo" id="ContentPlaceHolder1_txtSerialNo" type="number" required="" class="form-control">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">Date</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtDate" id="ContentPlaceHolder1_txtDate" type="date" required="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname"></label>
+                                       <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="REVIEW DETAILS" id="ContentPlaceHolder1_btnSubmit" class="btn btn-reg">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div id="ContentPlaceHolder1_divResult" class="col">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock main-content %}

@@ -1,0 +1,59 @@
+{% load static %}
+<header id="header-area">
+   <div class="preheader-area">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 col-sm-7 col-7">
+               <div id="divTopNumber" class="preheader-left">
+               </div>
+            </div>
+            <div class="col-lg-6 col-sm-5 col-5 text-right">
+               <div class="preheader-right">
+                  <a title="" class="btn-auth btn-auth" href="{{cancellation.link}}">Request for Cancellation </a>
+                  <a title="" class="btn-auth btn-auth" href="{% url "subscription" %}">GET FREE SUBSCRIPTION</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="header-bottom-area" id="fixheader">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <nav class="main-menu navbar navbar-expand-lg navbar-light">
+                  <a class="navbar-brands" href="/">
+                  <img src="{% static "assets/img/logo.png" %}" alt="Logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menucontent" aria-controls="menucontent" aria-expanded="false">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="menucontent">
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item {% if request.path == '/' %}active{% endif %}"><a class='nav-link' href='/'>Home</a></li>
+                        <li class="nav-item {% if request.path == '/About/' %}active{% endif %}"><a class='nav-link' href='{% url "about" %}'>About Us</a></li>
+                        <li class="nav-item {% if request.path == '/PlanandProtection/' %}active{% endif %}"><a class='nav-link' href='{% url "protection" %}'>Your Protection</a></li>
+                        <li class="nav-item {% if request.path == '/OrderandClaim/' %}active{% endif %}"><a class='nav-link' href='{% url "status" %}'>Request Status</a></li>
+                        <li class="nav-item {% if request.path == '/Form/' %}active{% endif %}"><a class='nav-link' href='{% url "raise_a_issue" %}'>Raise a Issue</a></li>
+                        <li class="nav-item {% if request.path == '/Support/' %}active{% endif %}"><a class='nav-link' href='{% url "technical_assistant" %}'>Technical Assistance</a></li>
+                        <li class="nav-item {% if request.path == '/faq/' %}active{% endif %}"><a class='nav-link' href='{% url "faq" %}'>FAQ</a></li>
+                        <li class="nav-item {% if request.path == '/Contact/' %}active{% endif %}"><a class='nav-link' href='{% url "contact" %}'>Contact Us</a></li>
+                        <script>
+                           function ShowHide(id) {
+                               var v = document.getElementById(id);
+                               if (v.style.display == 'block') {
+                                   v.style.display = 'none';
+                               }
+                               else {
+                                   v.style.display = 'block';
+                               }
+                           }
+                        </script>
+                        <link rel="stylesheet" href="{% static "Template/modal/modal.css" %}">
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>

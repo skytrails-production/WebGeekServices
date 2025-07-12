@@ -1,0 +1,130 @@
+{% extends "app/base/base.html" %}
+{% load static %}
+{% block main-content %}
+<!--== Page Title Area Start ==-->
+<section id="page-title-area">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8 m-auto text-center">
+            <div class="page-title-content">
+               <h1 class="h2">One Month Free Subscription</h1>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--== Page Title Area End ==-->
+<section id="page-content-wrap">
+   <div class="contact-page-wrap section-padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="contact-content-inner">
+                  <div class="row">
+                     <div class="col-lg-5">
+                        <!-- Map Area Start -->
+                        <div class="">
+                           <img src="{% static "assets/img/orderclaim.jpg" %}" class="img-fluid">
+                        </div>
+                        <!-- Map Area End -->
+                     </div>
+                     <div class="col-lg-6 m-autos">
+                        <div class="contact-form-wrap">
+                           <h3 style="line-height: 1.3em;">SUBSCRIBE NOW</h3>
+                           <div action="#" id="cbx-contact-form">
+                              <div class="row">
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">First Name</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtFirstName" id="ContentPlaceHolder1_txtFirstName" type="text" required="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">Last Name</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtLastName" id="ContentPlaceHolder1_txtLastName" type="text" required="" class="form-control">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxemail">Mobile No.</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtMobile" id="ContentPlaceHolder1_txtMobile" type="number" required="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">Email</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtEmail" id="ContentPlaceHolder1_txtEmail" type="email" required="" class="form-control">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">Address 1</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtAddress1" id="ContentPlaceHolder1_txtAddress1" type="text" required="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">Address 2</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtAddress2" id="ContentPlaceHolder1_txtAddress2" type="text" class="form-control">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">City</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtCity" id="ContentPlaceHolder1_txtCity" type="text" required="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">State</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtState" id="ContentPlaceHolder1_txtState" type="text" required="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">Zip</label>
+                                       <input name="ctl00$ContentPlaceHolder1$txtZip" id="ContentPlaceHolder1_txtZip" type="text" required="" class="form-control">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <label for="cbxname">Service Need For</label><br>
+                                       <select name="ctl00$ContentPlaceHolder1$ddlServiceNeed" id="ContentPlaceHolder1_ddlServiceNeed" type="text" required="" class="form-control">
+                                          <option value="HOME">HOME</option>
+                                          <option value="STORE">STORE</option>
+                                          <option value="OFFICE">OFFICE</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col">
+                                    <div class="form-group">
+                                       <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="SUBMIT" id="ContentPlaceHolder1_btnSubmit" class="btn btn-reg" style="float:right;">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div id="ContentPlaceHolder1_divResult" class="col">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+{% endblock main-content %}

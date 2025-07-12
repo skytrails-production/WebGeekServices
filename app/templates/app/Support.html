@@ -1,0 +1,265 @@
+{% extends "app/base/base.html" %}
+{% load static %}
+{% block main-content %}
+
+<!--== Page Title Area Start ==-->
+<section id="page-title-area">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8 m-auto text-center">
+            <div class="page-title-content">
+               <h1 class="h2">Technical Assistance Server</h1>
+               <b>Use this checklist to see if your remote support operations are set-up for success and growth.</b>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--== Page Title Area End ==-->
+<section style="padding: 30px 0 20px 0;">
+   <div class="container">
+      <div class="col-lg-12">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="page-title-content" style="text-align: center;">
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            {% for i in technical_assistant %}
+            <div class="col-md-3">
+               <a href="{{i.link}}">
+                  <div>
+                     <img src="{{i.icon.url}}" class="img-fluid">
+                  </div>
+                  <div style="text-align: center; font-weight: bold; padding: 10px;">{{i.title}}</div>
+               </a>
+            </div>
+            {% endfor %}
+            {% comment %} <div class="col-md-3">
+               <a href="https://alpemix.com/en/macosx-files">
+                  <div>
+                     <img src="{% static "assets/img/alpha.jpg" %}" class="img-fluid">
+                  </div>
+                  <div style="text-align: center; font-weight: bold; padding: 10px;">ALPHA SUPPORT (IOS)</div>
+               </a>
+            </div>
+            <div class="col-md-3">
+               <a href="https://www.ultraviewer.net/en/UltraViewer_setup_6.6_en.exe">
+                  <div>
+                     <img src="{% static "assets/img/UltraSupport1.png" %}" class="img-fluid">
+                  </div>
+                  <div style="text-align: center; font-weight: bold; padding: 10px;">ULTRA SUPPORT (WIN)</div>
+               </a>
+            </div>
+            <div class="col-md-3">
+               <a href="https://www.ultraviewer.net/en/UltraViewer_setup_6.6_en.exe">
+                  <div>
+                     <img src="{% static "assets/img/UltraSupport1.png" %}" class="img-fluid">
+                  </div>
+                  <div style="text-align: center; font-weight: bold; padding: 10px;">ULTRA SUPPORT (IOS)</div>
+               </a>
+            </div>
+            <div class="col-md-3">
+               <a href="https://www.supremocontrol.com/download-supremo/windows/" target="_blank">
+                  <div>
+                     <img src="{% static "assets/img/SupremeSupport.jpg" %}" class="img-fluid">
+                  </div>
+                  <div style="text-align: center; font-weight: bold; padding: 10px;">SUPREME SUPPORT</div>
+               </a>
+            </div>
+            <div class="col-md-3">
+               <a href="https://www.supremocontrol.com/download-supremo/macos/">
+                  <div>
+                     <img src="{% static "assets/img/SupremeSupport.jpg" %}" class="img-fluid">
+                  </div>
+                  <div style="text-align: center; font-weight: bold; padding: 10px;">SUPREME SUPPORT (IOS)</div>
+               </a>
+            </div>
+            <div class="col-md-3">
+               <a href="awesun/windows/Aweray_Remote_2.0.0.45399_x64.exe" target="_blank">
+                  <div>
+                     <img src="{% static "assets/img/AwesomeSupport.png" %}" class="img-fluid">
+                  </div>
+                  <div style="text-align: center; font-weight: bold; padding: 10px;">AWESOME SUPPORT (WIN)</div>
+               </a>
+            </div>
+            <div class="col-md-3">
+               <a href="awesun/mac/AweSun.dmg" target="_blank">
+                  <div>
+                     <img src="{% static "assets/img/AwesomeSupport.png" %}" class="img-fluid">
+                  </div>
+                  <div style="text-align: center; font-weight: bold; padding: 10px;">AWESOME SUPPORT (IOS)</div>
+               </a>
+            </div>
+            <div class="col-md-3">
+               <div></div>
+               <div style="text-align: center; font-weight: bold; padding: 10px; margin-top: 100px;"></div>
+            </div> {% endcomment %}
+         </div>
+         <div class="about-page-content-wrap section-padding" style="background-color: #f7f9fb;">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-11 m-auto">
+                     <!-- Single about text start -->
+                     <div class="single-about-text" style="text-align: center;">
+                        <img src="{% static "assets/img/333.png" %}" alt="About" class="img-fluid img-left">
+                        <h3 style="line-height: 40px;"><b>Get Connect with Geek Squad Agent.</b></h3>
+                        <br>
+                        &nbsp;
+                        <p id="ContentPlaceHolder1_lblLnk"><a href="https://geektechsquad.screenconnect.com/" class="btn-auth btn-auth-rev">Connect Now</a></p>
+                        <br>
+                        &nbsp;<br>
+                        <br>
+                        <table style="width: 480px;">
+                           <tr>
+                              <span id="ContentPlaceHolder1_lbl1"></span>
+                           </tr>
+                           <tr>
+                              <span id="ContentPlaceHolder1_lbl2"></span>
+                           </tr>
+                        </table>
+                        <br>
+                        <span style="font-size: 9pt;">By continuing, you agree to the following terms: Conditions of Use | Privacy | CA Privacy</span>
+                     </div>
+                     <!-- Single about text End -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-12">
+               <br>
+               <h4><b>Geek Squad Support Permissions That Change Dynamically Based on the Scenario</b></h4>
+               <br>
+               With most remote support software, every session is the same. Either you can control the remote computer, or you can’t. BeyondTrust, on the other hand, gives administrators more than 50 permissions to define how reps, customers and remote systems interact at a very granular level.<br>
+               <br>
+               BeyondTrust's support session policies are dynamic, rather than rigid, bringing additional flexibility to already-powerful security measures. Admins can customize support session permissions to fit a variety of support scenarios.<br>
+               <br>
+               Support session policies let you change the permissions allowed in a remote support session based on the support portal the customer came through or even the specific endpoint being supported.<br>
+               <br>
+               <br>
+            </div>
+         </div>
+         <div class="row" style="background-color: #ff7e1e5c; padding: 20px;">
+            <div class="col-md-3">
+               <div style="text-align: center;">
+                  <img src="{% static "assets/img/faster-inspection.png" %}" class="img-fluid">
+               </div>
+               <div style="text-align: center; font-weight: bold; padding: 10px;">
+                  70%<br>
+                  Faster Maintenance and Inspection
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div style="text-align: center;">
+                  <img src="{% static "assets/img/traveltime.png" %}" class="img-fluid">
+               </div>
+               <div style="text-align: center; font-weight: bold; padding: 10px;">
+                  60%<br>
+                  Less Travel Expenses
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div style="text-align: center;">
+                  <img src="{% static "assets/img/less-time.png" %}" class="img-fluid">
+               </div>
+               <div style="text-align: center; font-weight: bold; padding: 10px;">
+                  60%<br>
+                  Less Downtime
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div style="text-align: center;">
+                  <img src="{% static "assets/img/contactless.png" %}" class="img-fluid">
+               </div>
+               <div style="text-align: center; font-weight: bold; padding: 10px;">
+                  100%<br>
+                  Contactless Operation
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-12">
+               <br>
+               <h4><b>Public Portal Authentication</b></h4>
+               <br>
+               Add an extra layer of security by requiring authentication for users accessing the Public Portal online. By using SAML, (Security Assertion Markup Language) an open standard for exchanging authentication and authorization data between parties, your service desk representatives are able to gather information about users requesting support, such as their name, login name, and a recognizable email before starting a session. This not only eliminates the inconvenience of the user having to provide these details when the session starts, but it also gives your service desk representative confidence in the identity of the person for whom they are providing support. This is an optional feature to ensure our customers are providing the most the secure remote support possible. By validating authentication, users and admins will be able to gather additional data to satisfy internal and external compliance requirements.
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--== Committee Page Content Start ==-->
+<section id="page-content-wrap">
+   <div class="about-page-content-wrap section-padding" style="padding-top: 45px; display: none;">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-5" style="margin-bottom: 40px;">
+               <img src="{% static "assets/img/ser1.jpg" %}" alt="About" class="img-fluid img-left">
+            </div>
+            <div class="col-md-7" style="margin-bottom: 40px;">
+               <h2 class="h3">What we do?</h2>
+               <p style="font-size: 19px;">Geek Squad maintains your tech well by providing necessary support and services for your electronic appliances under one roof. We have separate teams at Geek Squad Support to look into PC, hardware, software, home and office equipment. Nearly all major electronic items are covered. Furthermore, the support team offers total tech support for extraordinary installation, setup, and repair services for electronic appliances. The experts are extensively trained and have technical abilities to tackle any of your device issues efficiently.</p>
+            </div>
+            <div class="clear"></div>
+            <div class="col-md-7" style="margin-bottom: 40px;">
+               <h2 class="h3">Increased Life Span</h2>
+               <p style="font-size: 19px;">Give life to your devices here at Geek Squad. Tune up your appliances by availing the top-notch services and support available at Geek Squad Support. Enable your devices to serve you for longer tenure, thereby increasing the productivity and efficiency. Tackle the product issues in most effectual way and keep your devices up and running with unprecedented support available.</p>
+            </div>
+            <div class="col-md-5" style="margin-bottom: 40px;">
+               <img src="{% static "assets/img/ser2.jpg" %}" alt="About" class="img-fluid img-left">
+            </div>
+            <div class="clear"></div>
+            <div class="col-md-5" style="margin-bottom: 40px;">
+               <img src="{% static "assets/img/ser3.jpg" %}" alt="About" class="img-fluid img-left">
+            </div>
+            <div class="col-md-7" style="margin-bottom: 40px;">
+               <h2 class="h3">24/7 round the clock Support</h2>
+               <p style="font-size: 19px;">Our Geek Squad experts are accessible 24/7,365 days. You can reach our Geek Squad Support experts for any device concern you face. They are well versed in resolving all minor/major issue your device encounters. Get on-call, in-store, online support, and face to face agent support and in-home service whenever and wherever you get stuck with your devices. Get access to our support and service as per your convenience.</p>
+            </div>
+            <div class="clear"></div>
+         </div>
+      </div>
+   </div>
+   <div class="about-page-content-wrap" style="padding-top: 2px; background-color: white;">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6">
+               <!-- Single about text start -->
+               <div class="single-about-text" style="text-align: left; padding-top: 100px;">
+                  <h2 style="line-height: 40px;"><b>You have our <span style="color: blue;">undivided </span>attention.</b></h2>
+                  When you chat with us, your problems are ours. We resolve 95% of our cases within 45 minutes.
+                  <br>
+                  &nbsp;<br>
+                  <span style="font-size: 9pt;">
+                  <img src="{% static "assets/img/suppo11.png" %}" alt="About" class="img-fluid" style="filter: grayscale(0%)"></span>
+               </div>
+               <!-- Single about text End -->
+            </div>
+            <div class="col-lg-6">
+               <!-- Single about text start -->
+               <div class="single-about-text" style="text-align: center;">
+                  <img src="{% static "assets/img/support12345.png" %}" alt="About" class="img-fluid" style="filter: grayscale(0%)">
+               </div>
+               <!-- Single about text End -->
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-12">
+               <!-- Single about text start -->
+               <div class="single-about-text" style="text-align: center; padding-top: 100px;">
+                  <h2 style="line-height: 40px;"><b>We <span style="color: blue;">stand </span>behind our work.</b></h2>
+                  We offer a 30-day workmanship guarantee on all Geek Squad repairs.
+                  <br>
+                  <span style="font-size: 9pt;">
+                  <img src="{% static "assets/img/badge.png" %}" alt="About" class="img-fluid" style="filter: grayscale(0%)"></span>
+               </div>
+               <!-- Single about text End -->
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock main-content %}
