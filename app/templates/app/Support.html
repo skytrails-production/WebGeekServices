@@ -106,7 +106,7 @@
                      <div class="single-about-text" style="text-align: center;">
                        
                         
-                         <img src="{% static "assets/img/333.png" %}" alt="About" class="img-fluid img-left">
+                         {% comment %} <img src="{% static "assets/img/333.png" %}" alt="About" class="img-fluid img-left"> {% endcomment %}
                         
                         
                        
@@ -125,8 +125,8 @@
                               <span id="ContentPlaceHolder1_lbl2"></span>
                            </tr>
                         </table>
-                        <br>
-                        <span style="font-size: 9pt;">By continuing, you agree to the following terms: Conditions of Use | Privacy | CA Privacy</span>
+                        {% comment %} <br> {% endcomment %}
+                        {% comment %} <span style="font-size: 9pt;">By continuing, you agree to the following terms: Conditions of Use | Privacy | CA Privacy</span> {% endcomment %}
                      </div>
                      <!-- Single about text End -->
                   </div>
