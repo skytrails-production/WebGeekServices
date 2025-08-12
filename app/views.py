@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import Contact,TechnicalAssistance,RaiseAIssue,RequestCancellation
+from .models import Contact,TechnicalAssistance,RaiseAIssue,RequestCancellation,ConnectNow
 
 # Create your views here.
 
@@ -64,8 +64,10 @@ def raiseissue(request):
 
 def technical_assistant(request):
     technical_assistant = TechnicalAssistance.objects.all()
+    connect = ConnectNow.objects.all()
     context = {
-        'technical_assistant':technical_assistant
+        'technical_assistant':technical_assistant,
+        'connect':connect
     }
     return render(request,'app/Support.html',context)
 

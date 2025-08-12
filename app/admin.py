@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contact,TechnicalAssistance,RaiseAIssue,RequestCancellation
+from .models import Contact,TechnicalAssistance,RaiseAIssue,RequestCancellation,ConnectNow
 # Register your models here.
 
 
@@ -17,5 +17,5 @@ admin.site.register(Contact,ContactAdmin)
 admin.site.register(TechnicalAssistance,TechnicalAssistanceAdmin)
 admin.site.register(RaiseAIssue,RaiseaIssueAdmin)
 admin.site.register(RequestCancellation)
-
+admin.site.register(ConnectNow)
 

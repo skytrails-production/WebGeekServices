@@ -99,15 +99,22 @@
          </div>
          <div class="about-page-content-wrap section-padding" style="background-color: #f7f9fb;">
             <div class="container">
+               {% for i in connect %}
                <div class="row">
                   <div class="col-lg-11 m-auto">
                      <!-- Single about text start -->
                      <div class="single-about-text" style="text-align: center;">
-                        <img src="{% static "assets/img/333.png" %}" alt="About" class="img-fluid img-left">
-                        <h3 style="line-height: 40px;"><b>Get Connect with Geek Squad Agent.</b></h3>
+                        {% if i.image.url %}
+                        <img src="{{i.image.url}}" alt="About" class="img-fluid img-left">
+                        {% else %}
+                         <img src="{% static "assets/img/333.png" %}" alt="About" class="img-fluid img-left">
+                        
+                        {% endif %}
+                       
+                        <h3 style="line-height: 40px;"><b>{{i.title}}</b></h3>
                         <br>
                         &nbsp;
-                        <p id="ContentPlaceHolder1_lblLnk"><a href="https://geektechsquad.screenconnect.com/" class="btn-auth btn-auth-rev">Connect Now</a></p>
+                        <p id="ContentPlaceHolder1_lblLnk"><a href="{{i.link}}" class="btn-auth btn-auth-rev">Connect Now</a></p>
                         <br>
                         &nbsp;<br>
                         <br>
@@ -125,6 +132,8 @@
                      <!-- Single about text End -->
                   </div>
                </div>
+
+               {% endfor %}
             </div>
          </div>
          <div class="row">

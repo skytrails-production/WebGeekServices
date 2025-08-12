@@ -18,7 +18,10 @@ class TechnicalAssistance(models.Model):
     title = models.CharField(max_length=255)
     date = models.DateTimeField(auto_now_add=True)
 
-
+class ConnectNow(models.Model):
+    image = models.ImageField(upload_to='ConnectNow',null=True,blank=True)
+    title = models.CharField(max_length=255)
+    link = models.URLField(max_length=500,null=True,blank=True)
 
 class RaiseAIssue(models.Model):
     first_name = models.CharField(max_length=255,null=True,blank=True)
