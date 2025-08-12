@@ -99,23 +99,24 @@
          </div>
          <div class="about-page-content-wrap section-padding" style="background-color: #f7f9fb;">
             <div class="container">
-               {% for i in connect %}
+               
                <div class="row">
                   <div class="col-lg-11 m-auto">
                      <!-- Single about text start -->
                      <div class="single-about-text" style="text-align: center;">
                        
                         
-                         {% comment %} <img src="{% static "assets/img/333.png" %}" alt="About" class="img-fluid img-left"> {% endcomment %}
+                         <img src="{% static "assets/img/333.png" %}" alt="About" class="img-fluid img-left">
                         
                         
-                       
+                        {% for i in connect %}
                         <h3 style="line-height: 40px;"><b>{{i.title}}</b></h3>
                         <br>
                         &nbsp;
                         <p id="ContentPlaceHolder1_lblLnk"><a href="{{i.link}}" class="btn-auth btn-auth-rev">Connect Now</a></p>
                         <br>
                         &nbsp;<br>
+                        {% endfor %}
                         <br>
                         <table style="width: 480px;">
                            <tr>
@@ -132,7 +133,7 @@
                   </div>
                </div>
 
-               {% endfor %}
+              
             </div>
          </div>
          <div class="row">
